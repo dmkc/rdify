@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/browserify ./node_modules/pouchdb/dist/pouchdb.min.js ./lib/rdio.js ./lib/app.js -o bundle.js",
-    "debug": "./node_modules/.bin/watchify -d -v ./node_modules/pouchdb/dist/pouchdb.min.js ./lib/rdio.js ./lib/app.js -o bundle.js"
+    "build": "./node_modules/.bin/browserify ./node_modules/ ./lib/rdio.js ./lib/app.js -o bundle.js",
+    "debug": "./node_modules/.bin/watchify -d -v ./node_modules/ ./lib/rdio.js ./lib/app.js -o bundle.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "browserify": "^12.0.1",
-    "pouchdb": "^5.1.0"
+    "pouchdb": "^5.1.0",
+    "q": "^1.4.1",
+    "reqwest": "^2.0.5"
   }
 }
