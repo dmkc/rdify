@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/browserify ./node_modules/ ./lib/rdio.js ./lib/app.js -o bundle.js",
-    "debug": "./node_modules/.bin/watchify -d -v ./node_modules/ ./lib/rdio.js ./lib/app.js -o bundle.js"
+    "build": "./node_modules/.bin/browserify ./lib/app.js -o bundle.js",
+    "debug": "./node_modules/.bin/watchify -d -v ./node_modules/ ./lib/app.js -o bundle.js"
   },
   "author": "",
   "license": "ISC",
